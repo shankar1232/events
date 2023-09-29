@@ -64,7 +64,7 @@ class Events extends Component {
 
   getActiveEventRegistrationStatus = () => {
     const {activeEventId} = this.state
-    const activeEventDetails = eventsList.fin(
+    const activeEventDetails = eventsList.find(
       event => event.id === activeEventId,
     )
     if (activeEventDetails) {
